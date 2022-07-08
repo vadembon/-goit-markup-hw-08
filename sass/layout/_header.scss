@@ -1,0 +1,106 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: #fff;
+}
+.header-nav {
+  @include flex($jc: null);
+}
+// .logo {
+//   margin-right: 93px;
+
+//   color: var(--titel-text-color);
+//   font-weight: 700;
+//   font-size: 24px;
+//   line-height: 1.16;
+//   text-decoration: none;
+//   @media screen and(min-width:1200px) {
+//     font-size: 26px;
+//     line-height: 1.19;
+//   }
+// }
+// .logo__part {
+//   color: var(--accent-color);
+//   font-family: 'Raleway', sans-serif;
+//   font-weight: 700;
+//   font-size: 24px;
+//   line-height: 1.16;
+//   @media screen and(min-width:1200px) {
+//     font-size: 26px;
+//     line-height: 1.19;
+//   }
+// }
+/*---------------- site-nav ----------*/
+// .header-nav__list {
+//   display: flex;
+// }
+.header-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-nav__link {
+  position: relative;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--titel-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms var(--effect-cubik);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &--current {
+    color: var(--accent-color);
+  }
+  &--current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: var(--accent-color);
+  }
+}
+
+/*--------------- contact------------ */
+.header__contact-list {
+  // display: flex;
+  margin-left: auto;
+}
+// .header__contact-item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+.header__contact-link {
+  // @include flex();
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  padding-bottom: 10px;
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms var(--effect-cubik);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.header__contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

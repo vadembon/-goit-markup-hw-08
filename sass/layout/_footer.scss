@@ -1,0 +1,140 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer__logo {
+  margin-right: 0;
+  color: var(--white-text-color);
+}
+.footer-box {
+  text-align: center;
+  @media screen and(min-width:1200px) {
+    @include flex($ai: baseline, $jc: null);
+    text-align: start;
+  }
+}
+.footer-box__tablet {
+  @media screen and(min-width:768px) {
+    @include flex($ai: baseline, $jc: space-around);
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
+}
+.footer__box-address {
+  margin-bottom: 60px;
+  @media screen and(min-width:1200px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
+.footer__list {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer__address {
+  color: var(--white-text-color);
+  text-decoration: none;
+}
+.footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 250ms var(--effect-cubik);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__box-icon {
+  margin-bottom: 60px;
+  @media screen and(min-width:1200px) {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+}
+.footer__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer__list-icon {
+  @include flex();
+}
+.footer__item-icon {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer__link-icon {
+  @include flex();
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: var(--white-text-color);
+  background: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--effect-cubik);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.footer__icon {
+  fill: currentColor;
+}
+.footer__form {
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
+}
+.footer__mail-form {
+  width: 100%;
+  height: 50px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  margin-bottom: 20px;
+  padding-left: 16px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.25;
+  outline: transparent;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and(min-width:768px) {
+    width: 450px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}
+
+.footer__btn-form {
+  display: flex;
+  padding: 10px 35px;
+}
+.footer__icon-form {
+  margin-left: 10px;
+}
