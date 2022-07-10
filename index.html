@@ -53,6 +53,62 @@
           </li>
         </ul>
       </div>
+      <!-- ----мобільне меню------- -->
+      <button type="button" class="menu-mob-open" data-menu-open>
+        <svg class="menu-mob-button">
+          <use href="./img/symbol-defs.svg#icon-menu_24px" class="menu-open"></use>
+        </svg>
+      </button>
+      <div class="menu-mob is-hidden" data-menu>
+        <div class="container">
+          <button type="button" class="menu-mob__button-close" data-menu-close>
+            <svg class="menu-mob-button">
+              <use href="./img/symbol-defs.svg#icon-close-menu_24px" class="menu-mob__close"></use>
+            </svg>
+          </button>
+          <div class="menu-mob__box">
+            <div class="menu-mob__nav-box">
+              <ul class="menu-mob__nav-list">
+                <li class="menu-mob__nav-item">
+                  <a href="./index.html" class="menu-mob__link menu-mob__link--current">Студия </a>
+                </li>
+                <li class="menu-mob__nav-item">
+                  <a href="./portfolio.html" class="menu-mob__link">Портфолио </a>
+                </li>
+                <li class="menu-mob__nav-item">
+                  <a href="" class="menu-mob__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-mob__contact-box">
+              <ul class="menu-mob__contact-list">
+                <li class="menu-mob__contact-item">
+                  <a href="tel:+380961111111" class="menu-mob__tel-link"> +38 096 111 11 11</a>
+                </li>
+                <li class="menu-mob__contact-item">
+                  <a href="mailto:info@devstudio.com" lang="en" class="menu-mob__mail-link">
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu-mob__soc">
+                <li class="menu-mob__soc-item">
+                  <a href="" class="menu-mob__soc-link">Instagram</a>
+                </li>
+                <li class="menu-mob__soc-item">
+                  <a href="" class="menu-mob__soc-link">Twitter</a>
+                </li>
+                <li class="menu-mob__soc-item">
+                  <a href="" class="menu-mob__soc-link">Facebook</a>
+                </li>
+                <li class="menu-mob__soc-item">
+                  <a href="" class="menu-mob__soc-link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!--основной контент-->
     <main>
@@ -122,19 +178,34 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img src="./img/img-1.jpg" alt="верстка" width="370" />
+              <img
+                srcset="./img/img-1.jpg 1x, ./img/work2x1-min.jpg 2x"
+                src="./img/img-1.jpg"
+                alt="верстка"
+                width="370"
+              />
               <div class="work__box-text">
                 <p class="work__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="work__item">
-              <img src="./img/img-2.jpg" alt="разработка приложения" width="370" />
+              <img
+                srcset="./img/img-2.jpg 1x, ./img/work2x2-min.jpg 2x"
+                src="./img/img-2.jpg"
+                alt="разработка приложения"
+                width="370"
+              />
               <div class="work__box-text">
                 <p class="work__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="work__item">
-              <img src="./img/img-3.jpg" alt="палитра на планшете" width="370" />
+              <img
+                srcset="./img/img-3.jpg 1x, ./img/work2x3-min.jpg 2x"
+                src="./img/img-3.jpg"
+                alt="палитра на планшете"
+                width="370"
+              />
               <div class="work__box-text">
                 <p class="work__text">Дизайнерские решения</p>
               </div>
@@ -148,7 +219,22 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./img/img-4.jpg" alt="Product Designer" width="270" />
+              <picture>
+                <source
+                  srcset="./img/img-4.jpg 1x, ./img/team2x1-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/tablet-team1-min.jpg 1x, ./img/tablet-team1@2x-min.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/mobil-team1-min.jpg 1x, ./img/mobil-team1@2x-min.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./img/img-4.jpg" alt="Product Designer" width="270" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p lang="en" class="team__text">Product Designer</p>
@@ -185,7 +271,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/img-5.jpg" alt="Frontend Developer" width="270" />
+              <picture>
+                <source
+                  srcset="./img/img-5.jpg 1x, ./img/team2x2-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/tablet-team2-min.jpg 1x, ./img/tablet-team2@2x-min.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/mobil-team2-min.jpg 1x, ./img/mobil-team2@2x-min.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./img/img-5.jpg" alt="Frontend Developer" width="270" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -222,7 +323,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/img-6.jpg" alt="Marketing" width="270" />
+              <picture>
+                <source
+                  srcset="./img/img-6.jpg 1x, ./img/team2x3-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/tablet-team3-min.jpg 1x, ./img/tablet-team3@2x-min.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/mobil-team3-min.jpg 1x, ./img/mobil-team3@2x-min.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./img/img-6.jpg" alt="Marketing" width="270" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -259,7 +375,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/img-7.jpg" alt="UI Designer" width="270" />
+              <picture>
+                <source
+                  srcset="./img/img-7.jpg 1x, ./img/team2x4-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/tablet-team4-min.jpg 1x, ./img/tablet-team4@2x-min.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/mobil-team4-min.jpg 1x, ./img/mobil-team4@2x-min.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./img/img-7.jpg" alt="UI Designer" width="270" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>
@@ -493,6 +624,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
