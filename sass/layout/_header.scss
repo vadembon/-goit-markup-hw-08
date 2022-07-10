@@ -139,6 +139,11 @@
   border: 0;
   padding: 0;
   background-color: inherit;
+  transition: fill 250ms var(--effect-cubik);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
   @media screen and(min-width:768px) {
     display: none;
   }
