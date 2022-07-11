@@ -276,6 +276,7 @@ body {
   z-index: 2;
   top: 0;
   left: 0;
+  display: -webkit-flex;
   padding: 48px 15px 48px 40px;
   background-color: #ffffff;
   overflow: auto;
@@ -401,12 +402,11 @@ body {
   background-size: cover;
   background-position: center;
   max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobil-hero-min.jpg");
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -425,6 +425,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero.jpg");
   }
 }
@@ -500,6 +502,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+@media screen and (max-width: 678px) {
+  .features__title {
+    text-align: center;
+  }
 }
 
 .features__text {
@@ -849,7 +856,7 @@ body {
 
 .footer__btn-form {
   display: flex;
-  padding: 10px 35px;
+  padding: 10px 34px;
 }
 
 .footer__icon-form {
@@ -868,7 +875,7 @@ body {
 }
 
 .filter__btn-list {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -879,6 +886,11 @@ body {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .filter__btn-list {
+    margin-bottom: 50px;
+  }
+}
 
 .filter__btn-item:not(:last-child) {
   margin-right: 8px;
@@ -886,6 +898,11 @@ body {
 
 .filter__btn-item {
   margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .filter__btn-item {
+    margin-bottom: 0;
+  }
 }
 
 .filter__btn {

@@ -8,12 +8,15 @@
   }
 }
 .filter__btn-list {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
   @media screen and(min-width:768px) {
     @include flex($ai: null);
     margin-bottom: 30px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
   }
 }
 .filter__btn-item:not(:last-child) {
@@ -21,6 +24,9 @@
 }
 .filter__btn-item {
   margin-bottom: 15px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 0;
+  }
 }
 .filter__btn {
   display: block;
