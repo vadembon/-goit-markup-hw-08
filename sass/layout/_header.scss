@@ -79,9 +79,6 @@
     border-radius: 2px;
     background-color: var(--accent-color);
   }
-  @media screen and(min-width:1200px) {
-    bottom: -5px;
-  }
 }
 
 /*--------------- contact------------ */
@@ -102,6 +99,7 @@
   }
   @media screen and(min-width:1200px) {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 

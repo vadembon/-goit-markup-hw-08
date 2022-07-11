@@ -191,11 +191,6 @@ body {
   border-radius: 2px;
   background-color: var(--accent-color);
 }
-@media screen and (min-width: 1200px) {
-  .header-nav__link {
-    bottom: -5px;
-  }
-}
 
 /*--------------- contact------------ */
 .header__contact-list {
@@ -221,6 +216,7 @@ body {
 @media screen and (min-width: 1200px) {
   .header__contact-item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
